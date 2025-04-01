@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f1e4;
+}
+
+h1 {
+ font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size:xx-large;
+  color: #a31313;
+  opacity: 80%;
+  margin-top: 10rem
+}
+
+.tarot-container {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6d28d9;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
