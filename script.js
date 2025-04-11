@@ -1,17 +1,12 @@
 
-document.getElementById("drawCardBtn").addEventListener("click", function() {
-    fetch("tarot.json")
+document.getElementById("drawMantraBtn").addEventListener("click", function() {
+    fetch("mantras.json")
         .then(response => response.json())
         .then(data => {
-            const randomCard = data[Math.floor(Math.random() * data.length)];
+            const randomMantra = data[Math.floor(Math.random() * data.length)];
 
-            document.getElementById("cardImg").src = randomCard.img;
-            document.getElementById("cardTitle").textContent = randomCard.title;
-            document.getElementById("cardNumber").textContent = `Number: ${randomCard.number}`;
-            document.getElementById("cardDescription").textContent = randomCard.description;
-
-            document.getElementById("cardDisplay").classList.remove("hidden");
+            document.getElementById("mantraText").textContent = randomMantra.mantra;
+            document.getElementById("mantraDisplay").classList.remove("hidden");
         })
-        .catch(error => console.error("Error loading tarot cards:", error));
+        .catch(error => console.error("Error loading mantra:", error));
 });
-
